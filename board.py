@@ -146,6 +146,8 @@ class Board(object):
                 self.board[i][j] = reference.board[i][j]
 
     def has_valid_move(self, color):
+        """Return if 'color' has a valid move.
+        """
         moves = self.valid_moves(color);
         if moves:
             return True
